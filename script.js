@@ -138,7 +138,6 @@ function searchHero() {
     let input = this.value.toLowerCase();
     let suggestionBox = document.getElementById("suggestions");
     suggestionBox.innerHTML = ""; // Մաքրում ենք նախորդ արդյունքները
-  
     if (input === "") return; // Եթե դատարկ է, ոչինչ չցուցադրել
   
     let suggestions = heroes.filter(hero => hero.toLowerCase().includes(input));
@@ -190,3 +189,8 @@ function restartPage() {
   // Էջի թարմացում
   location.reload();
 }
+
+document.getElementById('restart-button').addEventListener('click', function () {
+  document.getElementById('search-box').value = ''; // Մաքրում է որոնման դաշտը
+  document.getElementById('heroResult').innerHTML = ''; // Մաքրում է արդյունքները
+});
