@@ -137,3 +137,22 @@ button:hover {
 .hidden {
     display: none;
 }
+/* Նոր ռեսթարտի կոճակը */
+#restart-button {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
